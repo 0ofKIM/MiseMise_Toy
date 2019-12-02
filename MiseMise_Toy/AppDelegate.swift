@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  MiseMise_Toy
 //
-//  Created by Lotte on 2019/11/27.
 //  Copyright © 2019 studygroup. All rights reserved.
 //
 
