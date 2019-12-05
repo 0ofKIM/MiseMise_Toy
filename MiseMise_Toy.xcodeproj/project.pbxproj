@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FD1C28604406642C50B9D82 /* libPods-MiseMise_Toy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73519F6C2077D46966C8CDFA /* libPods-MiseMise_Toy.a */; };
 		FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F1238E95A000D1B4EC /* AppDelegate.swift */; };
 		FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */; };
 		FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F5238E95A000D1B4EC /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2A672DAC027B648130CB80 /* Pods-MiseMise_Toy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.debug.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.debug.xcconfig"; sourceTree = "<group>"; };
+		4E9ACB87FB0F4BD847A685AE /* Pods-MiseMise_Toy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.release.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.release.xcconfig"; sourceTree = "<group>"; };
+		73519F6C2077D46966C8CDFA /* libPods-MiseMise_Toy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiseMise_Toy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD334EE238E95A000D1B4EC /* MiseMise_Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiseMise_Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD334F1238E95A000D1B4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD1C28604406642C50B9D82 /* libPods-MiseMise_Toy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7CDCF99434267003071AA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E2A672DAC027B648130CB80 /* Pods-MiseMise_Toy.debug.xcconfig */,
+				4E9ACB87FB0F4BD847A685AE /* Pods-MiseMise_Toy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E66B7D1F32D8BB4848046E66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73519F6C2077D46966C8CDFA /* libPods-MiseMise_Toy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBD334E5238E95A000D1B4EC = {
 			isa = PBXGroup;
 			children = (
 				FBD334F0238E95A000D1B4EC /* MiseMise_Toy */,
 				FBD334EF238E95A000D1B4EC /* Products */,
+				CE7CDCF99434267003071AA9 /* Pods */,
+				E66B7D1F32D8BB4848046E66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD33502238E95A500D1B4EC /* Build configuration list for PBXNativeTarget "MiseMise_Toy" */;
 			buildPhases = (
+				49C96A262A3C13748FE119A2 /* [CP] Check Pods Manifest.lock */,
 				FBD334EA238E95A000D1B4EC /* Sources */,
 				FBD334EB238E95A000D1B4EC /* Frameworks */,
 				FBD334EC238E95A000D1B4EC /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49C96A262A3C13748FE119A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiseMise_Toy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBD334EA238E95A000D1B4EC /* Sources */ = {
@@ -216,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,16 +332,21 @@
 		};
 		FBD33503238E95A500D1B4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E2A672DAC027B648130CB80 /* Pods-MiseMise_Toy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MiseMise_Toy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.studygroup.MiseMise-Toy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +354,21 @@
 		};
 		FBD33504238E95A500D1B4EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9ACB87FB0F4BD847A685AE /* Pods-MiseMise_Toy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MiseMise_Toy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.studygroup.MiseMise-Toy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

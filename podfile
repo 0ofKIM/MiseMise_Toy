@@ -1,0 +1,5 @@
+platform :ios, '13.1'
+target 'MiseMise_Toy' do
+pod 'Alamofire'
+end
+
