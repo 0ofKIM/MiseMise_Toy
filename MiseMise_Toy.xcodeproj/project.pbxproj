@@ -15,6 +15,9 @@
 		FBD334FE238E95A500D1B4EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD334FC238E95A500D1B4EC /* LaunchScreen.storyboard */; };
 		FBD3358F23956CED00D1B4EC /* TestFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3358D23956CED00D1B4EC /* TestFirstTableViewCell.swift */; };
 		FBD3359023956CED00D1B4EC /* TestFirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */; };
+		FBD3359A239D0AB100D1B4EC /* TestRedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33598239D0AB100D1B4EC /* TestRedTableViewCell.swift */; };
+		FBD3359B239D0AB100D1B4EC /* TestRedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD33599239D0AB100D1B4EC /* TestRedTableViewCell.xib */; };
+		FBD3359D239D12DC00D1B4EC /* CellRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD3359C239D12DC00D1B4EC /* CellRegister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FBD334FF238E95A500D1B4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD3358D23956CED00D1B4EC /* TestFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFirstTableViewCell.swift; sourceTree = "<group>"; };
 		FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFirstTableViewCell.xib; sourceTree = "<group>"; };
+		FBD33598239D0AB100D1B4EC /* TestRedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRedTableViewCell.swift; sourceTree = "<group>"; };
+		FBD33599239D0AB100D1B4EC /* TestRedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRedTableViewCell.xib; sourceTree = "<group>"; };
+		FBD3359C239D12DC00D1B4EC /* CellRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,6 @@
 		FBD334F0238E95A000D1B4EC /* MiseMise_Toy */ = {
 			isa = PBXGroup;
 			children = (
-				FBD3358D23956CED00D1B4EC /* TestFirstTableViewCell.swift */,
-				FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */,
 				FBD3358C23956CCB00D1B4EC /* Cell */,
 				FBD334F1238E95A000D1B4EC /* AppDelegate.swift */,
 				FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */,
@@ -77,6 +81,11 @@
 		FBD3358C23956CCB00D1B4EC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				FBD3359C239D12DC00D1B4EC /* CellRegister.swift */,
+				FBD3358D23956CED00D1B4EC /* TestFirstTableViewCell.swift */,
+				FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */,
+				FBD33598239D0AB100D1B4EC /* TestRedTableViewCell.swift */,
+				FBD33599239D0AB100D1B4EC /* TestRedTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 				FBD334FE238E95A500D1B4EC /* LaunchScreen.storyboard in Resources */,
 				FBD334FB238E95A500D1B4EC /* Assets.xcassets in Resources */,
 				FBD3359023956CED00D1B4EC /* TestFirstTableViewCell.xib in Resources */,
+				FBD3359B239D0AB100D1B4EC /* TestRedTableViewCell.xib in Resources */,
 				FBD334F9238E95A000D1B4EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD3359A239D0AB100D1B4EC /* TestRedTableViewCell.swift in Sources */,
 				FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */,
+				FBD3359D239D12DC00D1B4EC /* CellRegister.swift in Sources */,
 				FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */,
 				FBD3358F23956CED00D1B4EC /* TestFirstTableViewCell.swift in Sources */,
 				FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */,

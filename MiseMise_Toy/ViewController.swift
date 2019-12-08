@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var cellNibName: [String] = []
     @IBOutlet var mainTableView: UITableView!
 
     override func viewDidLoad() {
@@ -16,24 +17,29 @@ class ViewController: UIViewController {
 
         mainTableView.delegate = self
         mainTableView.dataSource = self
-
-        let nibName = UINib(nibName: "TestFirstTableViewCell", bundle: nil)
-
-        mainTableView.register(nibName, forCellReuseIdentifier: "TestFirstTableViewCell")
     }
 
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return cellNibName.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TestFirstTableViewCell", for: indexPath) as! TestFirstTableViewCell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TestFirstTableViewCell.identifier, for: indexPath) as! TestFirstTableViewCell
 
-        return cell
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TestRedTableViewCell.identifier, for: indexPath) as! TestRedTableViewCell
+
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TestFirstTableViewCell.identifier, for: indexPath) as! TestFirstTableViewCell
+
+            return cell
+        }
     }
-
 
 }
