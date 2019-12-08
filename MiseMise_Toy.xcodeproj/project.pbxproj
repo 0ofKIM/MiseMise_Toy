@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6FD1C28604406642C50B9D82 /* libPods-MiseMise_Toy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73519F6C2077D46966C8CDFA /* libPods-MiseMise_Toy.a */; };
+		AF60E9B7239CEFBD00980561 /* GlobalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E9B6239CEFBD00980561 /* GlobalUtil.swift */; };
+		AF60E9B9239CEFCC00980561 /* HttpCommThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60E9B8239CEFCC00980561 /* HttpCommThread.swift */; };
 		FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F1238E95A000D1B4EC /* AppDelegate.swift */; };
 		FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */; };
 		FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F5238E95A000D1B4EC /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		0E2A672DAC027B648130CB80 /* Pods-MiseMise_Toy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.debug.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.debug.xcconfig"; sourceTree = "<group>"; };
 		4E9ACB87FB0F4BD847A685AE /* Pods-MiseMise_Toy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.release.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.release.xcconfig"; sourceTree = "<group>"; };
 		73519F6C2077D46966C8CDFA /* libPods-MiseMise_Toy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiseMise_Toy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF60E9B6239CEFBD00980561 /* GlobalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUtil.swift; sourceTree = "<group>"; };
+		AF60E9B8239CEFCC00980561 /* HttpCommThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCommThread.swift; sourceTree = "<group>"; };
 		FBD334EE238E95A000D1B4EC /* MiseMise_Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiseMise_Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD334F1238E95A000D1B4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF60E9B5239CEFA900980561 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AF60E9B6239CEFBD00980561 /* GlobalUtil.swift */,
+				AF60E9B8239CEFCC00980561 /* HttpCommThread.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CE7CDCF99434267003071AA9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		FBD334E5238E95A000D1B4EC = {
 			isa = PBXGroup;
 			children = (
+				AF60E9B5239CEFA900980561 /* Util */,
 				FBD334F0238E95A000D1B4EC /* MiseMise_Toy */,
 				FBD334EF238E95A000D1B4EC /* Products */,
 				CE7CDCF99434267003071AA9 /* Pods */,
@@ -189,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */,
+				AF60E9B9239CEFCC00980561 /* HttpCommThread.swift in Sources */,
 				FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */,
+				AF60E9B7239CEFBD00980561 /* GlobalUtil.swift in Sources */,
 				FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
