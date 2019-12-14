@@ -48,7 +48,6 @@ func Global_showToast(message : String) {
     let nToastSize = toastLabel.sizeThatFits(maxSizeTitle)
     topMostViewController!.view.addSubview(toastLabel)
     
-    
     // auto layout 설정을 위해 false
     toastLabel.translatesAutoresizingMaskIntoConstraints = false
     // greaterThanOrEqualToConstant: 최소 크기
@@ -59,7 +58,6 @@ func Global_showToast(message : String) {
     // greaterThanOrEqualTo: 크거나 같다
     toastLabel.leadingAnchor.constraint(greaterThanOrEqualTo: topMostViewController!.view.leadingAnchor, constant: 10).isActive = true
     toastLabel.trailingAnchor.constraint(greaterThanOrEqualTo: topMostViewController!.view.leadingAnchor, constant: 10).isActive = true
-    
     
     UIView.animate(withDuration: 3.3, delay: 0.1, options: .curveEaseOut, animations: {
         toastLabel.alpha = 0.0

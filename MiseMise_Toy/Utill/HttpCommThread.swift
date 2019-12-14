@@ -27,7 +27,6 @@ class HttpCommThread {
             
             var data = response.value
             
-            
             if(data == nil || data!.count <= 0){
                 print("데이터가 없습니다.")
                 return

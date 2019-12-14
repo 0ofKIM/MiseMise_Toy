@@ -36,6 +36,9 @@ func testDataResponse() {
     Global_setbuffer(strKey: "ver", strValue: "1.0")
     Global_setbuffer(strKey: "_returnType", strValue: "json")
     
+    /**
+     데이터 통신후 처리될부분 구현
+     */
     HttpCommThread.shared.requestHttp(strUrl: url, completion: {
         (isSuccess) in
         guard isSuccess else {
