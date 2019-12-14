@@ -2,7 +2,6 @@
 //  TestRedTableViewCell.swift
 //  MiseMise_Toy
 //
-//  Created by Lotte on 2019/12/08.
 //  Copyright © 2019 studygroup. All rights reserved.
 //
 

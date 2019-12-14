@@ -10,6 +10,10 @@
 		AFE23FB023A4934300176E08 /* GlobalUtill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE23FAF23A4934300176E08 /* GlobalUtill.swift */; };
 		AFE23FB223A4935100176E08 /* HttpCommThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE23FB123A4935100176E08 /* HttpCommThread.swift */; };
 		F38650B181C7D0DD25752521 /* libPods-MiseMise_Toy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E878871A63C56C8EE3CF37D3 /* libPods-MiseMise_Toy.a */; };
+		FBD1BF32239FA9F0000AF872 /* HourlyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1BF30239FA9F0000AF872 /* HourlyForecastTableViewCell.swift */; };
+		FBD1BF33239FA9F0000AF872 /* HourlyForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD1BF31239FA9F0000AF872 /* HourlyForecastTableViewCell.xib */; };
+		FBD1BF36239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1BF34239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift */; };
+		FBD1BF37239FAAE8000AF872 /* HourlyForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD1BF35239FAAE8000AF872 /* HourlyForecastCollectionViewCell.xib */; };
 		FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F1238E95A000D1B4EC /* AppDelegate.swift */; };
 		FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */; };
 		FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD334F5238E95A000D1B4EC /* ViewController.swift */; };
@@ -29,6 +33,10 @@
 		AFE23FB123A4935100176E08 /* HttpCommThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCommThread.swift; sourceTree = "<group>"; };
 		C882DA4035A189E5845D4319 /* Pods-MiseMise_Toy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.debug.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.debug.xcconfig"; sourceTree = "<group>"; };
 		E878871A63C56C8EE3CF37D3 /* libPods-MiseMise_Toy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiseMise_Toy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD1BF30239FA9F0000AF872 /* HourlyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		FBD1BF31239FA9F0000AF872 /* HourlyForecastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyForecastTableViewCell.xib; sourceTree = "<group>"; };
+		FBD1BF34239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		FBD1BF35239FAAE8000AF872 /* HourlyForecastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyForecastCollectionViewCell.xib; sourceTree = "<group>"; };
 		FBD334EE238E95A000D1B4EC /* MiseMise_Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiseMise_Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD334F1238E95A000D1B4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +89,15 @@
 				AFE23FB123A4935100176E08 /* HttpCommThread.swift */,
 			);
 			path = Utill;
+		FBD1BF38239FAAF6000AF872 /* HourlyForecast */ = {
+			isa = PBXGroup;
+			children = (
+				FBD1BF30239FA9F0000AF872 /* HourlyForecastTableViewCell.swift */,
+				FBD1BF31239FA9F0000AF872 /* HourlyForecastTableViewCell.xib */,
+				FBD1BF34239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift */,
+				FBD1BF35239FAAE8000AF872 /* HourlyForecastCollectionViewCell.xib */,
+			);
+			path = HourlyForecast;
 			sourceTree = "<group>";
 		};
 		FBD334E5238E95A000D1B4EC = {
@@ -125,6 +142,7 @@
 				FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */,
 				FBD33598239D0AB100D1B4EC /* TestRedTableViewCell.swift */,
 				FBD33599239D0AB100D1B4EC /* TestRedTableViewCell.xib */,
+				FBD1BF38239FAAF6000AF872 /* HourlyForecast */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -189,6 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD334FE238E95A500D1B4EC /* LaunchScreen.storyboard in Resources */,
+				FBD1BF33239FA9F0000AF872 /* HourlyForecastTableViewCell.xib in Resources */,
+				FBD1BF37239FAAE8000AF872 /* HourlyForecastCollectionViewCell.xib in Resources */,
 				FBD334FB238E95A500D1B4EC /* Assets.xcassets in Resources */,
 				FBD3359023956CED00D1B4EC /* TestFirstTableViewCell.xib in Resources */,
 				FBD3359B239D0AB100D1B4EC /* TestRedTableViewCell.xib in Resources */,
@@ -230,12 +250,14 @@
 			files = (
 				FBD3359A239D0AB100D1B4EC /* TestRedTableViewCell.swift in Sources */,
 				FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */,
+				FBD1BF36239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				FBD3359D239D12DC00D1B4EC /* CellRegister.swift in Sources */,
 				AFE23FB223A4935100176E08 /* HttpCommThread.swift in Sources */,
 				FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */,
 				FBD3358F23956CED00D1B4EC /* TestFirstTableViewCell.swift in Sources */,
 				AFE23FB023A4934300176E08 /* GlobalUtill.swift in Sources */,
 				FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */,
+				FBD1BF32239FA9F0000AF872 /* HourlyForecastTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

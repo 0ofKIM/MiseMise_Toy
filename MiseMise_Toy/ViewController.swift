@@ -48,10 +48,13 @@ func testDataResponse() {
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+
+    //메인 테이블뷰의 셀 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellNibName.count
     }
 
+    //각 셀 구성
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: TestFirstTableViewCell.identifier, for: indexPath) as! TestFirstTableViewCell
@@ -61,11 +64,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: TestRedTableViewCell.identifier, for: indexPath) as! TestRedTableViewCell
 
             return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: TestFirstTableViewCell.identifier, for: indexPath) as! TestFirstTableViewCell
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: HourlyForecastTableViewCell.identifier, for: indexPath) as! HourlyForecastTableViewCell
 
             return cell
         }
+
+        // cellNibName 배열 개수대로 나와서 추가는 안될거지만 함수 리턴값을 위해 임의로 넣어둠
+        let cell = tableView.dequeueReusableCell(withIdentifier: TestFirstTableViewCell.identifier, for: indexPath) as! TestFirstTableViewCell
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //시간별 예보 행
+        if indexPath.row == 2 {
+            return CGFloat(100)
+        }
+
+        return CGFloat(44)
     }
 
 }
