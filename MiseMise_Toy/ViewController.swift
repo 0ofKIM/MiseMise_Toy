@@ -17,8 +17,31 @@ class ViewController: UIViewController {
 
         mainTableView.delegate = self
         mainTableView.dataSource = self
+        
+        // 데이터 수신 테스트
+        testDataResponse()
     }
 
+}
+
+func testDataResponse() {
+    let serviceKey = "xKlWL1rKISxO2G5Lc2QiKY4jeOsZBq8Ex00Vr%2B9BfBCHwTspVF2FzNd50POwJKFFKvkIXjNkmT01de3v%2FQXVGQ%3D%3D"
+    let url = "http://openapi.airkorea.or.kr/"
+        + "openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
+    
+    Global_setbuffer(strKey: "ServiceKey", strValue: serviceKey)
+    Global_setbuffer(strKey: "numberOfRows", strValue: "10")
+    Global_setbuffer(strKey: "pageNo", strValue: "1")
+    Global_setbuffer(strKey: "dataTerm", strValue: "DAILY")
+    Global_setbuffer(strKey: "ver", strValue: "1.0")
+    Global_setbuffer(strKey: "_returnType", strValue: "json")
+    
+    HttpCommThread.shared.requestHttp(strUrl: url, completion: {
+        (isSuccess) in
+        guard isSuccess else {
+            return
+        }
+    })
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
