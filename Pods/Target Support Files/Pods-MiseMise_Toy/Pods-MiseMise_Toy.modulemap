@@ -1,0 +1,6 @@
+module Pods_MiseMise_Toy {
+  umbrella header "Pods-MiseMise_Toy-umbrella.h"
+
+  export *
+  module * { export * }
+}
