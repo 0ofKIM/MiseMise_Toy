@@ -9,6 +9,10 @@ import UIKit
 
 class HourlyForecastCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var statusEmoticonButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    
     static let identifier = "HourlyForecastCollectionViewCell"
 
     override func awakeFromNib() {

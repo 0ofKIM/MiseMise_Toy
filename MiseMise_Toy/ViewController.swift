@@ -53,7 +53,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //시간별 예보 행
         if indexPath.row == 2 {
-            return CGFloat(100)
+            return CGFloat(123)
         }
 
         return CGFloat(44)
