@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DailyForecastTableViewCell" customModule="MiseMise_Toy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수요일 아침" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9r-aL-Coe">
+                        <rect key="frame" x="15" y="1" width="78" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOR-Kx-T2t">
+                        <rect key="frame" x="177.5" y="1" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="KcH-Vx-JB3"/>
+                            <constraint firstAttribute="height" constant="20" id="Os7-HW-dAi"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="good"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매우 나쁨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-MP-Lix">
+                        <rect key="frame" x="296" y="1" width="64" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WOR-Kx-T2t" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2Vs-Zz-wxB"/>
+                    <constraint firstItem="WOR-Kx-T2t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="59a-jR-i57"/>
+                    <constraint firstItem="Rt3-MP-Lix" firstAttribute="top" secondItem="Z9r-aL-Coe" secondAttribute="top" id="GII-H7-oUD"/>
+                    <constraint firstItem="Rt3-MP-Lix" firstAttribute="bottom" secondItem="Z9r-aL-Coe" secondAttribute="bottom" id="Gtc-Hz-Z9t"/>
+                    <constraint firstAttribute="bottom" secondItem="Z9r-aL-Coe" secondAttribute="bottom" constant="1" id="RjD-rd-Dnh"/>
+                    <constraint firstAttribute="trailing" secondItem="Rt3-MP-Lix" secondAttribute="trailing" constant="15" id="rzi-9R-rfW"/>
+                    <constraint firstItem="Z9r-aL-Coe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="yXj-mf-e8I"/>
+                    <constraint firstItem="Z9r-aL-Coe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zI3-4f-KzC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="statusButton" destination="WOR-Kx-T2t" id="Kc5-iB-sO6"/>
+                <outlet property="statusLabel" destination="Rt3-MP-Lix" id="gSi-RI-qxo"/>
+                <outlet property="timeLabel" destination="Z9r-aL-Coe" id="gfo-vF-jNg"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="good" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,5 +1,5 @@
 //
-//  HourlyForecastTableViewCell.swift
+//  HourlyForecast.swift
 //  MiseMise_Toy
 //
 //  Copyright © 2019 studygroup. All rights reserved.
@@ -7,9 +7,11 @@
 
 import UIKit
 
-class HourlyForecastTableViewCell: UITableViewCell {
+class HourlyForecast: UITableViewCell {
 
-    static var identifier = "HourlyForecastTableViewCell"
+    static let identifier = "HourlyForecast"
+    let nib = UINib(nibName: HourlyForecastCollectionViewCell.identifier, bundle: nil)
+    
     @IBOutlet var hourlyForecastCollectionView: UICollectionView!
 
     override func awakeFromNib() {
@@ -17,8 +19,6 @@ class HourlyForecastTableViewCell: UITableViewCell {
 
         hourlyForecastCollectionView.delegate = self
         hourlyForecastCollectionView.dataSource = self
-
-        let nib = UINib(nibName: HourlyForecastCollectionViewCell.identifier, bundle: nil)
 
         hourlyForecastCollectionView.register(nib, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.identifier)
     }
@@ -29,7 +29,7 @@ class HourlyForecastTableViewCell: UITableViewCell {
     
 }
 
-extension HourlyForecastTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HourlyForecast: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12

@@ -39,7 +39,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
             return cell
         } else if indexPath.row == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: HourlyForecastTableViewCell.identifier, for: indexPath) as! HourlyForecastTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: HourlyForecast.identifier, for: indexPath) as! HourlyForecast
+
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: DailyForecast.identifier, for: indexPath) as! DailyForecast
 
             return cell
         }
@@ -54,6 +58,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //시간별 예보 행
         if indexPath.row == 2 {
             return CGFloat(123)
+        } else if indexPath.row == 3 { //일별 예보 행
+            return CGFloat(500)
         }
 
         return CGFloat(44)
