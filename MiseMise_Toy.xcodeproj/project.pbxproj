@@ -104,10 +104,11 @@
 		FBD334F0238E95A000D1B4EC /* MiseMise_Toy */ = {
 			isa = PBXGroup;
 			children = (
+				FBD334F5238E95A000D1B4EC /* ViewController.swift */,
+				FBD3359C239D12DC00D1B4EC /* CellRegister.swift */,
 				FBD3358C23956CCB00D1B4EC /* Cell */,
 				FBD334F1238E95A000D1B4EC /* AppDelegate.swift */,
 				FBD334F3238E95A000D1B4EC /* SceneDelegate.swift */,
-				FBD334F5238E95A000D1B4EC /* ViewController.swift */,
 				FBD334F7238E95A000D1B4EC /* Main.storyboard */,
 				FBD334FA238E95A500D1B4EC /* Assets.xcassets */,
 				FBD334FC238E95A500D1B4EC /* LaunchScreen.storyboard */,
@@ -119,7 +120,6 @@
 		FBD3358C23956CCB00D1B4EC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FBD3359C239D12DC00D1B4EC /* CellRegister.swift */,
 				FBD3358D23956CED00D1B4EC /* TestFirstTableViewCell.swift */,
 				FBD3358E23956CED00D1B4EC /* TestFirstTableViewCell.xib */,
 				FBD33598239D0AB100D1B4EC /* TestRedTableViewCell.swift */,
