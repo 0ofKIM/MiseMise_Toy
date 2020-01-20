@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,18 +10,50 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HourlyForecastCollectionViewCell" customModule="MiseMise_Toy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="193" height="222"/>
+            <rect key="frame" x="0.0" y="0.0" width="90" height="123"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="193" height="222"/>
+                <rect key="frame" x="0.0" y="0.0" width="90" height="123"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-Ek-qM5">
-                        <rect key="frame" x="0.0" y="0.0" width="193" height="222"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오전 12시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCS-Lh-yKT">
+                                <rect key="frame" x="15.5" y="10" width="59" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보통" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-oW-xKP">
+                                <rect key="frame" x="32" y="95" width="26" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-Hl-lNd">
+                                <rect key="frame" x="20" y="36.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pUP-18-Auz"/>
+                                    <constraint firstAttribute="width" constant="50" id="ptQ-L6-JQ7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="good"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rdi-oW-xKP" firstAttribute="centerX" secondItem="wKQ-Hl-lNd" secondAttribute="centerX" id="7m8-DL-B16"/>
+                            <constraint firstAttribute="bottom" secondItem="rdi-oW-xKP" secondAttribute="bottom" constant="10" id="INH-j9-xlR"/>
+                            <constraint firstItem="wKQ-Hl-lNd" firstAttribute="leading" secondItem="ka0-Ek-qM5" secondAttribute="leading" constant="20" id="Iao-4i-Slw"/>
+                            <constraint firstItem="wCS-Lh-yKT" firstAttribute="top" secondItem="ka0-Ek-qM5" secondAttribute="top" constant="10" id="LhJ-uW-F0h"/>
+                            <constraint firstItem="wCS-Lh-yKT" firstAttribute="centerX" secondItem="wKQ-Hl-lNd" secondAttribute="centerX" id="MRb-XB-nvw"/>
+                            <constraint firstAttribute="trailing" secondItem="wKQ-Hl-lNd" secondAttribute="trailing" constant="20" id="ZTf-QT-9fK"/>
+                            <constraint firstItem="wKQ-Hl-lNd" firstAttribute="centerY" secondItem="ka0-Ek-qM5" secondAttribute="centerY" id="dhh-9K-Y7j"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ka0-Ek-qM5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="M6M-Fn-9aL"/>
                 <constraint firstAttribute="bottom" secondItem="ka0-Ek-qM5" secondAttribute="bottom" id="PiL-oQ-Jrp"/>
@@ -29,8 +61,16 @@
                 <constraint firstAttribute="trailing" secondItem="ka0-Ek-qM5" secondAttribute="trailing" id="qfg-GC-rcg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="193" height="222"/>
-            <point key="canvasLocation" x="239.85507246376812" y="192.85714285714286"/>
+            <size key="customSize" width="95" height="125"/>
+            <connections>
+                <outlet property="statusEmoticonButton" destination="wKQ-Hl-lNd" id="Xwd-0k-aXC"/>
+                <outlet property="statusLabel" destination="rdi-oW-xKP" id="fgh-xG-zXq"/>
+                <outlet property="timeLabel" destination="wCS-Lh-yKT" id="aaS-Cd-esx"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="211.94196428571428"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="good" width="512" height="512"/>
+    </resources>
 </document>
