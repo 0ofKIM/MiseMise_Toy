@@ -7,6 +7,12 @@
 
 import UIKit
 
+extension String {
+    func decodeUrl() -> String?{ return self.removingPercentEncoding }
+    func encodeUrl() -> String?{ return self.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed) }
+    
+}
+
 class ViewController: UIViewController {
 
     var cellNibName: [String] = []
@@ -17,6 +23,28 @@ class ViewController: UIViewController {
 
         mainTableView.delegate = self
         mainTableView.dataSource = self
+        
+        let url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
+        let serviceKey = "bIg%2FjdOl5P%2BejhryhZbzlWFRN71XpkomTaww%2BOfiTMsPpvb6AmhktU%2Fqihvx9tISrZnL5mfyoVWuVCiJik979g%3D%3D".decodeUrl()
+        //var strUrl = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        
+        
+        Global_setbuffer(strKey: "ServiceKey", strValue: serviceKey!)
+        Global_setbuffer(strKey: "numOfRows", strValue: "10")
+        Global_setbuffer(strKey: "pageNo", strValue: "1")
+        Global_setbuffer(strKey: "stationName", strValue: "종로구")
+        Global_setbuffer(strKey: "dataTerm", strValue: "DAILY")
+        Global_setbuffer(strKey: "ver", strValue: "1.0")
+        Global_setbuffer(strKey: "_returnType", strValue: "json")
+        
+        HttpCommThread.shared.requestHttp(view: self, strUrl: url, completion: {
+            isSuccess in
+            guard isSuccess else {
+                return
+            }
+            Global_showToast(message: "데이터 통신 성공")
+        })
+        
     }
 
 }
