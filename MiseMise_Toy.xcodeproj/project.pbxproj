@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10E6C98BA1FF23ECB1707B87 /* Pods_MiseMise_Toy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B878FCFB06399DE8C41B878 /* Pods_MiseMise_Toy.framework */; };
+		AFF6CADC23E1E83E0046994A /* HttpCommThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */; };
+		AFF6CADE23E1E8540046994A /* GlobalHttpComm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */; };
+		AFF6CAE023E1E85E0046994A /* GlobalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */; };
 		FBC18EAC23C49E4E0021EE95 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC18EAA23C49E4E0021EE95 /* DailyForecast.swift */; };
 		FBC18EAD23C49E4E0021EE95 /* DailyForecast.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC18EAB23C49E4E0021EE95 /* DailyForecast.xib */; };
 		FBC18EB023C4A2020021EE95 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC18EAE23C4A2020021EE95 /* DailyForecastTableViewCell.swift */; };
@@ -29,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B878FCFB06399DE8C41B878 /* Pods_MiseMise_Toy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiseMise_Toy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9528F87B1FC9C057F323DF75 /* Pods-MiseMise_Toy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.debug.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCommThread.swift; sourceTree = "<group>"; };
+		AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHttpComm.swift; sourceTree = "<group>"; };
+		AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUtil.swift; sourceTree = "<group>"; };
+		EDD16C8AC80BB9864C8814D0 /* Pods-MiseMise_Toy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.release.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.release.xcconfig"; sourceTree = "<group>"; };
 		FBC18EAA23C49E4E0021EE95 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		FBC18EAB23C49E4E0021EE95 /* DailyForecast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyForecast.xib; sourceTree = "<group>"; };
 		FBC18EAE23C4A2020021EE95 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,12 +67,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E6C98BA1FF23ECB1707B87 /* Pods_MiseMise_Toy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832CEAD79AFFF53C5057243D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B878FCFB06399DE8C41B878 /* Pods_MiseMise_Toy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFF6CADA23E1E81F0046994A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */,
+				AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */,
+				AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DDB384DE1617CB6AFE6F8FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9528F87B1FC9C057F323DF75 /* Pods-MiseMise_Toy.debug.xcconfig */,
+				EDD16C8AC80BB9864C8814D0 /* Pods-MiseMise_Toy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FBC18EA923C49D7F0021EE95 /* DailyForecast */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +128,8 @@
 			children = (
 				FBD334F0238E95A000D1B4EC /* MiseMise_Toy */,
 				FBD334EF238E95A000D1B4EC /* Products */,
+				DDB384DE1617CB6AFE6F8FC9 /* Pods */,
+				832CEAD79AFFF53C5057243D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +144,7 @@
 		FBD334F0238E95A000D1B4EC /* MiseMise_Toy */ = {
 			isa = PBXGroup;
 			children = (
+				AFF6CADA23E1E81F0046994A /* Util */,
 				FBD334F5238E95A000D1B4EC /* ViewController.swift */,
 				FBD3359C239D12DC00D1B4EC /* CellRegister.swift */,
 				FBD3358C23956CCB00D1B4EC /* Cell */,
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD33502238E95A500D1B4EC /* Build configuration list for PBXNativeTarget "MiseMise_Toy" */;
 			buildPhases = (
+				42DE6927B484CCE78E9DD15A /* [CP] Check Pods Manifest.lock */,
 				FBD334EA238E95A000D1B4EC /* Sources */,
 				FBD334EB238E95A000D1B4EC /* Frameworks */,
 				FBD334EC238E95A000D1B4EC /* Resources */,
+				8696C20FF2ED2C78708AA911 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,20 +245,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42DE6927B484CCE78E9DD15A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiseMise_Toy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8696C20FF2ED2C78708AA911 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBD334EA238E95A000D1B4EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF6CADE23E1E8540046994A /* GlobalHttpComm.swift in Sources */,
 				FBD3359A239D0AB100D1B4EC /* TestRedTableViewCell.swift in Sources */,
 				FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */,
 				FBC18EAC23C49E4E0021EE95 /* DailyForecast.swift in Sources */,
+				AFF6CAE023E1E85E0046994A /* GlobalUtil.swift in Sources */,
 				FBD1BF36239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				FBD3359D239D12DC00D1B4EC /* CellRegister.swift in Sources */,
 				FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */,
 				FBC18EB023C4A2020021EE95 /* DailyForecastTableViewCell.swift in Sources */,
 				FBD3358F23956CED00D1B4EC /* TestFirstTableViewCell.swift in Sources */,
 				FBD334F4238E95A000D1B4EC /* SceneDelegate.swift in Sources */,
+				AFF6CADC23E1E83E0046994A /* HttpCommThread.swift in Sources */,
 				FBD1BF32239FA9F0000AF872 /* HourlyForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +446,7 @@
 		};
 		FBD33503238E95A500D1B4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9528F87B1FC9C057F323DF75 /* Pods-MiseMise_Toy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +464,7 @@
 		};
 		FBD33504238E95A500D1B4EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD16C8AC80BB9864C8814D0 /* Pods-MiseMise_Toy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
