@@ -8,7 +8,6 @@
 import UIKit
 
 extension String {
-    
     func decodeUrl() -> String?{ return self.removingPercentEncoding }
     func encodeUrl() -> String?{ return self.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed) }
     
@@ -25,14 +24,6 @@ class ViewController: UIViewController {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-        connect()
-    }
-
-}
-
-extension ViewController {
-    
-    func connect() {
         let url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
         let serviceKey = "bIg%2FjdOl5P%2BejhryhZbzlWFRN71XpkomTaww%2BOfiTMsPpvb6AmhktU%2Fqihvx9tISrZnL5mfyoVWuVCiJik979g%3D%3D".decodeUrl()
         //var strUrl = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
@@ -54,7 +45,7 @@ extension ViewController {
             Global_showToast(message: "데이터 통신 성공")
         })
     }
-    
+
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {

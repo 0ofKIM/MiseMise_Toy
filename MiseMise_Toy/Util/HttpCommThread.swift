@@ -10,22 +10,23 @@ import Foundation
 import Alamofire
 
 class HttpCommThread {
-    
     static let shared = HttpCommThread()
     var strData: NSString!
     
     func requestHttp(view: UIViewController, strUrl: String, completion: @escaping (Bool) -> Void) -> () {
         // 네트워크가 정상적으로 연결되어있는지 확인
         let bNetworkConnect = Global_getConnectedToNetwork()
-        guard (bNetworkConnect == true) else{
+        if(bNetworkConnect != true){
             Global_showToast(message: "Wi-Fi나 모바일데이터 연결상태를 확인해주세요.")
             return
         }
 
+     
+
         Alamofire.request(strUrl, method: .post, parameters: g_parameters ,headers: g_headers).validate().responseData{ response in
             
             let bResult = response.result.isSuccess
-            let data = response.value
+            var data = response.value
             
             print("통신결과: \(bResult)")
             print("받은 데이터: \(data)")
@@ -35,6 +36,6 @@ class HttpCommThread {
             print("데이터: \(self.strData!)")
             completion(true)
         }
+   
     }
-    
 }
