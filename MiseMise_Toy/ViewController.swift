@@ -8,7 +8,6 @@
 import UIKit
 
 extension String {
-    
     func decodeUrl() -> String?{ return self.removingPercentEncoding }
     func encodeUrl() -> String?{ return self.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed) }
     
@@ -31,7 +30,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    
+
     func connect() {
         let url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
         let serviceKey = "bIg%2FjdOl5P%2BejhryhZbzlWFRN71XpkomTaww%2BOfiTMsPpvb6AmhktU%2Fqihvx9tISrZnL5mfyoVWuVCiJik979g%3D%3D".decodeUrl()
