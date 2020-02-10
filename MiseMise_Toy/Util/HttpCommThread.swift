@@ -21,12 +21,10 @@ class HttpCommThread {
             return
         }
 
-     
-
         Alamofire.request(strUrl, method: .post, parameters: g_parameters ,headers: g_headers).validate().responseData{ response in
             
             let bResult = response.result.isSuccess
-            var data = response.value
+            let data = response.value
             
             print("통신결과: \(bResult)")
             print("받은 데이터: \(data)")
@@ -36,6 +34,5 @@ class HttpCommThread {
             print("데이터: \(self.strData!)")
             completion(true)
         }
-   
     }
 }
