@@ -11,6 +11,7 @@
 		AFF6CADC23E1E83E0046994A /* HttpCommThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */; };
 		AFF6CADE23E1E8540046994A /* GlobalHttpComm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */; };
 		AFF6CAE023E1E85E0046994A /* GlobalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */; };
+		AFF737DA23EAE4160014FD67 /* MiseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF737D923EAE4160014FD67 /* MiseDataModel.swift */; };
 		FBC18EAC23C49E4E0021EE95 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC18EAA23C49E4E0021EE95 /* DailyForecast.swift */; };
 		FBC18EAD23C49E4E0021EE95 /* DailyForecast.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC18EAB23C49E4E0021EE95 /* DailyForecast.xib */; };
 		FBC18EB023C4A2020021EE95 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC18EAE23C4A2020021EE95 /* DailyForecastTableViewCell.swift */; };
@@ -38,6 +39,7 @@
 		AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCommThread.swift; sourceTree = "<group>"; };
 		AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHttpComm.swift; sourceTree = "<group>"; };
 		AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUtil.swift; sourceTree = "<group>"; };
+		AFF737D923EAE4160014FD67 /* MiseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiseDataModel.swift; sourceTree = "<group>"; };
 		EDD16C8AC80BB9864C8814D0 /* Pods-MiseMise_Toy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiseMise_Toy.release.xcconfig"; path = "Target Support Files/Pods-MiseMise_Toy/Pods-MiseMise_Toy.release.xcconfig"; sourceTree = "<group>"; };
 		FBC18EAA23C49E4E0021EE95 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		FBC18EAB23C49E4E0021EE95 /* DailyForecast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyForecast.xib; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				AFF6CADB23E1E83E0046994A /* HttpCommThread.swift */,
 				AFF6CADD23E1E8540046994A /* GlobalHttpComm.swift */,
 				AFF6CADF23E1E85E0046994A /* GlobalUtil.swift */,
+				AFF737D923EAE4160014FD67 /* MiseDataModel.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				FBD334F6238E95A000D1B4EC /* ViewController.swift in Sources */,
 				FBC18EAC23C49E4E0021EE95 /* DailyForecast.swift in Sources */,
 				AFF6CAE023E1E85E0046994A /* GlobalUtil.swift in Sources */,
+				AFF737DA23EAE4160014FD67 /* MiseDataModel.swift in Sources */,
 				FBD1BF36239FAAE8000AF872 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				FBD3359D239D12DC00D1B4EC /* CellRegister.swift in Sources */,
 				FBD334F2238E95A000D1B4EC /* AppDelegate.swift in Sources */,
