@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-        let url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
+        let url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst"
         let serviceKey = "bIg%2FjdOl5P%2BejhryhZbzlWFRN71XpkomTaww%2BOfiTMsPpvb6AmhktU%2Fqihvx9tISrZnL5mfyoVWuVCiJik979g%3D%3D".decodeUrl()
         //var strUrl = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         
@@ -32,9 +32,9 @@ class ViewController: UIViewController {
         Global_setbuffer(strKey: "ServiceKey", strValue: serviceKey!)
         Global_setbuffer(strKey: "numOfRows", strValue: "10")
         Global_setbuffer(strKey: "pageNo", strValue: "1")
-        Global_setbuffer(strKey: "stationName", strValue: "종로구")
-        Global_setbuffer(strKey: "dataTerm", strValue: "DAILY")
-        Global_setbuffer(strKey: "ver", strValue: "1.0")
+        Global_setbuffer(strKey: "sidoName", strValue: "서울")
+        Global_setbuffer(strKey: "searchCondition", strValue: "DAILY")
+        //Global_setbuffer(strKey: "ver", strValue: "1.0")
         Global_setbuffer(strKey: "_returnType", strValue: "json")
         
         HttpCommThread.shared.requestHttp(view: self, strUrl: url, completion: {
